@@ -83,7 +83,7 @@ function speak(){
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(questions[current].spoken);
   u.lang = "en-US";
-  u.rate = 1.0;
+  u.rate = 1.15;
   u.pitch = 1;
   speechSynthesis.speak(u);
 }
