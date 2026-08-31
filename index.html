@@ -80,12 +80,8 @@ function showQuestion(){
   input.focus();
 }
 function speak(){
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(questions[current].spoken);
-  u.lang = "en-US";
-  u.rate = 1.15;
-  u.pitch = 1;
-  speechSynthesis.speak(u);
+  const audio = new Audio("q1.mp3");
+  audio.play();
 }
 listen.addEventListener("click", speak);
 
