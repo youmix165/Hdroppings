@@ -94,7 +94,7 @@ function showQuestion(){
   input.focus();
 }
 function speak(){
-  const audio = new Audio("q1.mp3");
+  const audio = new Audio(`q${current + 1}.mp3`);
   audio.play();
 }
 listen.addEventListener("click", speak);
